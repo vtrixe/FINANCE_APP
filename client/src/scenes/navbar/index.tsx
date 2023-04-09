@@ -10,7 +10,7 @@ const Navbar = (props: Props) => {
   const { palette } = useTheme();
   const [selected, setSelected] = useState("dashboard");
   return (
-    <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[300]}>
+    <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.primary[300]}>
       {/* LEFT SIDE */}
       <FlexBetween gap="0.75rem">
         <PixIcon sx={{ fontSize: "28px" }} />
@@ -26,7 +26,7 @@ const Navbar = (props: Props) => {
             to="/"
             onClick={() => setSelected("dashboard")}
             style={{
-              color: selected === "dashboard" ? "inherit" : palette.grey[700],
+              color: selected === "dashboard" ? "inherit" : palette.tertiary[500],
               textDecoration: "inherit",
             }}
           >
@@ -38,7 +38,7 @@ const Navbar = (props: Props) => {
             to="/predictions"
             onClick={() => setSelected("predictions")}
             style={{
-              color: selected === "predictions" ? "inherit" : palette.grey[700],
+              color: selected === "predictions" ? "inherit" : palette.tertiary[500],
               textDecoration: "inherit",
             }}
           >
