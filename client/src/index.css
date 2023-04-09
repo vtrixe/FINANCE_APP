@@ -8,7 +8,8 @@ body,
   height: 100%;
   width: 100%;
   font-family: 'Oswald', sans-serif;
-  background-color: #1a1a1a;
+  background-color: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+
 }
 
 ::-webkit-scrollbar {
