@@ -1,4 +1,4 @@
-# HACK_ECLIPSE_FINANCE_APP
+# SmartWealthMate
 A MERN stack-based finance manager application that helps businesses and individuals to track and view expenses, revenues, products, transactions, investments, and their future predictions using machine learning regression models. This application is built using Material UI, Node, Next.js, Redux, Recharts, MongoDB, and Express. The app fetches data from the database and creates analytics and predictions based on the algorithms designed. In the future, we plan to add more functionality such as connecting with other applications,using more prediction models and adding ability to handle meta-level of datasets.
 
 Features
