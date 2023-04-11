@@ -37,3 +37,6 @@ npm run build
 npm start
 
 client Deployment Link(using sample data from serveer DB):https://hack-eclipse-finance-app-ko4l.vercel.app/
+
+CREDIT:
+This is Built from taking guidance from Ed Roh MERN finance app.
