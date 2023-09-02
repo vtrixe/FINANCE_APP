@@ -30,19 +30,20 @@ app.use("/product", productRoutes);
 app.use("/transaction", transactionRoutes);
 
 /* MONGOOSE SETUP */
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 8000;
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(async () => {
+    console.log("Connected to MongoDB");
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
-  
-     await mongoose.connection.db.dropDatabase();
-   //  KPI.insertMany(kpis);
-   // Product.insertMany(products);
-   //  Transaction.insertMany(transactions);
+    // Uncomment the following lines to drop the database and insert initial data
+    // await mongoose.connection.db.dropDatabase();
+    // await KPI.insertMany(kpis);
+    // await Product.insertMany(products);
+    // await Transaction.insertMany(transactions);
   })
   .catch((error) => console.log(`${error} did not connect`));
