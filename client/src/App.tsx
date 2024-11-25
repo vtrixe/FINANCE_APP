@@ -7,6 +7,10 @@ import { themeSettings } from "./theme";
 import Navbar from "@/scenes/navbar";
 import Dashboard from "@/scenes/dashboard";
 import Predictions from "@/scenes/predictions";
+import StocksDashboard from "./components/stockdash";
+import RealTimeStockUpdates from "./components/stock";
+import StockManager from "./components/trade";
+import StockChart from "./components/portfolio";
 
 function App() {
   const theme = useMemo(() => createTheme(themeSettings), []);
@@ -20,6 +24,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/predictions" element={<Predictions />} />
+              <Route path="/stocks" element={<StocksDashboard />} />
             </Routes>
           </Box>
         </ThemeProvider>

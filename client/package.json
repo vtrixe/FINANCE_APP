@@ -15,23 +15,29 @@
     "@mui/material": "^5.11.11",
     "@mui/x-data-grid": "^6.0.0",
     "@reduxjs/toolkit": "^1.9.3",
+    "axios": "^1.7.7",
+    "chart.js": "^4.4.6",
+    "client": "file:",
     "dotenv": "^16.3.1",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.2",
     "recharts": "^2.4.3",
-    "regression": "^2.0.1"
+    "regression": "^2.0.1",
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@types/node": "^18.14.6",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.11",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "@types/regression": "^2.0.2",
+    "@types/socket.io-client": "^3.0.0",
     "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.35.0",
     "eslint-config-react-app": "^7.0.1",
-    "typescript": "^4.9.3",
+    "typescript": "^4.9.5",
     "vite": "^4.1.0"
   }
 }
